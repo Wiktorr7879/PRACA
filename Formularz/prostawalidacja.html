@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	 <meta charset="UTF-8">
+    <title>Formularz</title>
+</head>
+<body>
+   <form action="Formularz_akcja.html">
+   <fieldset>
+  <legend>Prosta walidacja po stronie klienta</legend>
+  <strong>tel:</strong>
+  <span>Podaj numer telefonu:</span>
+  <input type="tel" name "phone" placeholder="123-456-789" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}">
+  <br></br>
+  <strong>number:</strong>
+   <span>Podaj liczbę pomiędzy -50 a 0:</span>
+    <input type="number" max="0">
+	<br></br>
+	<strong>url:</strong>
+	 <span>Podaj adres URL:</span>
+	   <input type="url">
+	   <br></br>
+	   <strong>email:</strong>
+	    <span>Podaj email:</span>
+		  <input type="email">
+		<br></br>  
+	 <input type="submit" value="Wyślij">
+	 </fieldset>
+	</form>
+   
+  
+  
