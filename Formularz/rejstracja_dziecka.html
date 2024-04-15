@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	 <meta charset="UTF-8">
+    <title>Formularz</title>
+</head>
+<style>
+		table {
+			border-collapse: collapse;
+			width:100%
+		}
+		
+		td {
+			border: 1px solid black;
+			padding: 10px;
+		}
+		th {
+			border: 1px solid black;
+			padding: 10px;
+		}
+	</style>
+<body>
+   <form action="rejstracja_dziecka.html">
+   
+	<table>
+	 <tr>
+	 <td><label for="fname">Imię:<span style="color: red;">*</label></td>
+	 <td><input type="text" name="fname" required</td>
+	 <td><label for="lname">Nazwisko:<span style="color: red;">*</label></td>
+	 <td><input type="text" name="lname" required</td>
+	 <td><label for="location">Miejsce urodzenia:<span style="color: red;">*</label></td>
+	 <td><input type="text" name="location" required</td>
+	 </tr>
+	 <tr>
+	 <td><label for="sname">Drugie imię:</label></td>
+	 <td><input type="text" name="sname" required</td>
+	 <td><label for="date">Data urodzenia:<span style="color: red;">*</label></td>
+	 <td><input type="date"> 
+	 <td><label for="woj">Województwo urodzenia:<span style="color: red;">*</label></td>
+	 <td><select name="woj" id="woj">
+	 <option value="">Dolnośląskie</option>
+	 <option value="Dolnośląskie">Dolnośląskie</option>
+	 <option value="Kujawsko-pomorskie">Kujawsko-pomorskie</option>
+	 <option value="Lubelskie">Lubelskie</option>
+	 <option value="Lubuskie">Lubuskie></option>
+	 <option value="łodzkie">łodzkie</option>
+	 <option value="małopolskie">małopolskie</option>
+	 <option value="opolskie">opolskie</option>
+	 <option value="podkarpackie">podkarpackie</option>
+	 <option value="podlaskie">podlaskie</option>
+	 <option value="pomorskie">pomorskie</option>
+	 <option value="śląskie">śląskie</option>
+	 <option value="świętokrzyskie">świętokrzyskie</option>
+	 <option value="Wielkopolskie">Wielkopolskie</option>
+	 <option value="warmińsko-mazurskie">warmińsko-mazurskie</option>
+	 <option value="zachodnio-pomorskie">zachodnio-pomorskie</option>
+	 </select></td>
+	 </tr>
+	 <tr>
+	 <td colspan="6" style="text-align: center;">
+	 <input type="submit" value="Wyślij">
+	  </tr>
+	
+	 
+	</table>
+   
+   </form>
+   </body>
+   </html>

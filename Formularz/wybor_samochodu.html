@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+   <title> Wybor Samochodu </title>
+   </head>
+   <body>
+   <form action="formularz_akcja.html">
+   <style>
+		table {
+		      border-collapse: collapse;
+			  width: 100%;
+			  text-align: right;
+			 }
+			 
+			td {
+			
+				border-left : 3px  solid blueviolet ;
+				padding: 10px;
+				
+				}
+			
+   </style>
+   <table>
+   <tr> <td> Marka<span style="color: red;" >*</span> <label for="test" ><label>
+			<input id="test" name="test" type="text"> </td>
+   <td rowspan="2" >Typ nadwozia <span style="color: red;" >*</span> <label  for="cars"> </label>
+	
+	<select name="cars" id="cars" multiple>
+  
+  <option value="sedan">sedan</option>
+  <option value="kabriolet">kabriolet</option>
+  <option value="hatchback">hatchback</option>
+  <option value="coupe">coupe</option>
+  <option value="kombi">kombi</option>
+</select></td> 
+   <td>Miesiac i rok produkcji <label for="data">  </label>
+   <input id="date" name="date" max="09.04.2024" type="date"> </td> 
+   <td>Przebieg <label for="vol"><Label>
+			<input  id="vol" name="vol" min="25000" max="250000" 
+			oninput="this.nextElementSibling.value = this.value"
+			value="25000" type="range">
+			<output>25000</output></td> 
+   <td rowspan="2"><input type="submit"  value="Szukaj "></td> </td> 
+   </tr>
+   <tr> <td>Model<label>
+			<input id="test" name="test" type="text"> </td>
+   <td> Rodzaj paliwa <label  for="cars"> </label>
+	
+	<select name="cars" id="cars">
+  <option value="volvo">benzyna</option>
+  <option value="BMW">disel</option>
+  <option value="mercedes">elektryk</option>
+  <option value="audi">benzyna + elektryk</option>
+  <option value="Saab">diesel + elektryk </option>
+</select></td>
+   <td>Cena do <label for="vol"><Label>
+			<input  id="vol" name="vol" min="2000" max="500000" 
+			oninput="this.nextElementSibling.value = this.value"
+			value="1000" type="range">
+			<output>1000</output></td> 
+    
+    
+   </tr>
+   </table>
+   <br>
+   
+   </tr>
