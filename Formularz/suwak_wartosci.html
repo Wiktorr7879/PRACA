@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	 <meta charset="UTF-8">
+    <title>Formularz</title>
+</head>
+<body>
+<form action="Formularz_akcja.html">
+	<fieldset>
+	 <legend>Wybór pliku</legend>
+		<fieldset>
+		<legend>range</legend>
+		</br>
+		<label for="vol">Ustaw wartosc pomiedzy 0 a 50:</label><br>
+		<input id="vol" name="vol" min="0" max="50"
+			oninput="this.nextElementSibling.value = this.value"
+			value="24" type="range">
+			<output>24</output>
+			</br></br>
+			<input type="submit" value="Wyślij">
+			</fieldset>
+</form>
+</body>
+</html>
