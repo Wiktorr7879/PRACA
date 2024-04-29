@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+	table { width:100%;
+	}
+	
+	
+	td { border: 1px dotted gray; 
+	padding: 15px }
+	
+	tr  {
+            border: 1px solid lightgray;
+            padding: 15px;
+            width: 100%; 
+			}
+	
+	
+	.tekst { background-color: lightblue;
+	border: 2px solid cadetblue;
+	border-radius: 15px;
+	font-size: large;
+	padding: 5px 10px;
+	width: 100%;
+	}
+	  input:hover {
+            background-color: aliceblue;}
+	
+	
+
+	</style>
+</head>
+	<body>
+	<form action="powyslaniu.html">
+	<table>
+	<tr>
+	<td>
+	<label for="fname">Adres e-mail:</label></td>
+	<td>
+	<input class="tekst" id="fname" name="fname" placeholder="adres@email.com" type="text">
+	</td>
+	</tr>
+	<tr>
+	<td>
+	<label for="sname">Hasło:</label>
+	</td>
+	<td>
+	<input class="tekst" id="sname" name="sname" placeholder="minimum 8 znaków" type="text">
+	</td>
+	</tr>
+	<tr>
+	<td>
+	<label for="tname">Rola:</label></td>
+	<td>
+	<input id="html" name="fav_language" type="radio" value="kandydat">
+		<label for="html">kandydant</label>
+		<input id="html" name="fav_language" type="radio" value="aplikant">
+		<label for="html">aplikant</label>
+		<input id="html" name="fav_language" type="radio" value="kursant">
+		<label for="html">kursant</label>
+		<input id="html" name="fav_language" type="radio" value="absolwent">
+		<label for="html">absolwent</label>
+	</td>
+	</tr>
+	<tr>
+	<td>
+	<label for="tname">Grupa:</label></td>
+	<td>
+	 <input type="checkbox" name="vehicle1" id="wiosenna" value="wiosenna"
+	 <label for="wiosenna">wiosenna</label>
+	  <input type="checkbox" name="vehicle1" id="letnia" value="letnia"
+	 <label for="letnia">letnia</label>
+	  <input type="checkbox" name="vehicle1" id="jesienna" value="jesienna"
+	 <label for="jesienna">jesienna</label>
+	  <input type="checkbox" name="vehicle1" id="zimowa" value="zimowa"
+	 <label for="zimowa">zimowa</label>
+	 </td>
+	 </tr>
+	 <tr>
+	 <td>
+	 </td>
+	 <td>
+	   <input class="tekst" style="padding: 10px;" name="guzik" type="submit" value="Wyślij">
+	 </td>
+	 </tr>
+	
+	
+	
+	
+	
+	</table>
+	</form>
+	</body>
+	</html>
+
+	
+	

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            
+            width: 100%;
+        }
+        
+        td {
+            border: 1px dotted gray;
+            padding: 15px;
+
+        }
+        .tekst{
+
+            background-color: lightblue;
+            border: 2px solid cadetblue;
+			border-radius: 15px ;
+            font-size: large;
+            padding: 5px 10px;
+            width: 100%;
+            
+        }
+        tr {
+            border: 1px solid lightgray;
+            padding: 15px;
+            width: 100%;
+        }
+        input:hover {
+            background-color: aliceblue;}
+
+    </style>
+
+   
+</head>
+<body>
+    <form action="powyslaniu.html">
+    <table>
+        <tr>
+            <td><label for="fname">Adres e-mail:</label></td>
+            <td>
+                <input class="tekst"  id="fname" name="fname" placeholder="adres@email.com" type="text">
+            </td>
+         </tr>
+         <tr>
+            <td>
+                <label  for="haslo">Hasło:</label>
+            </td>
+            <td>
+                <input class="tekst" id="has" name="has" placeholder="minimum 8 znaków" type="text">
+            </td>
+         </tr>
+         <tr>
+            <td><label for="rola">Rola:</label></td>
+            <td>    
+            <input checked id="html" name="fav_language" type="radio" value="html">
+            <label for="html">kandydat</label>
+            <input id="css" name="fav_language" type="radio" value="css">
+            <label for="css">aplikant</label>
+            <input id="javascript" name="fav_language" type="radio" value="javascript"> 
+            <label for="javascript">kursant</label>
+            <input id="javascript" name="fav_language" type="radio" value="javascript"> 
+            <label for="javascript">absolwent</label>
+            </td>
+        </tr> 
+        <tr>
+            <td><label for="grupa">Grupa:</label></td>
+            <td>
+            <input id="hulajnoga" name="vehicle1" type="checkbox" value="hulajnoga">
+            <label for="hulajnoga">wiosenna</label>
+            <input id="rower" name="vehicle2" type="checkbox" value="rower">
+            <label for="rower">letnia</label>
+            <input id="fura" name="vehicle3" type="checkbox" value="fura">
+            <label for="fura">jesienna</label>
+            <input id="fura" name="vehicle3" type="checkbox" value="fura">
+            <label for="fura">zimowa</label>
+
+            </td>
+
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <input class="tekst" style="padding: 10px;" name="guzik" type="submit" value="Wyślij">
+            </td>
+
+        </tr>  
+            
+            
+         
+    </table>
+    </form>
+</body>
+</html>
