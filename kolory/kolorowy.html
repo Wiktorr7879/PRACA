@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Obrazek</title>
+  </head>
+  <body>
+   <form action="formularz_akcja.html">
+  <style>
+  table {
+  border collapse: collapse;
+  background-color: papayawhip;
+  font-family: Arial;
+  font-size: 1rem;
+  width: 400px;
+  }
+  
+  td {
+  border: 1px solid goldenrod;
+  padding: 10px;
+  text-align: center;
+  }
+  textarea {
+  background-color: sandybrown;
+  border: 1px solid saddlebrown;
+  }
+  input {
+  background-color: lavenderblush;
+  border: 1px solid saddlebrown'
+  }
+  
+  </style>
+  <table>
+  
+  <tr>
+  <td>
+  <input style="width: 100%" id="ename" name="ename" placeholder="pierwsze imię" type="text">
+  </td>
+  <td>
+  <input style="width: 100%" id="ename" name="ename" placeholder="drugie imię" type="text">
+  </td>
+  </tr>
+  <tr>
+  <td>
+<input id="vol" name="vol" min="-10" max="0" step="0.1"
+oninput="getElementById('vol2').value=this.value"
+ value="-10" type="range">
+</td>
+<td>
+<output id="vol2">-10</output> 
+</td>
+</tr>
+<tr>
+<td colspan=2>
+		    <textarea id="message" name="message" rows="5" cols="48">
+		</textarea>
+  </td>
+  </tr>
+  <tr>
+  <td>
+  <input type="search" placeholder="search" name="mySearch"
+  id="mySearch" class="write"></td>
+  <td>
+  <input class="write" list="character" placeholder="wybierz postać">
+  <datalist id="character">
+  <option placeholder="Jack" value="Jack">
+   <option placeholder="Wendy" value="Wendy">
+    <option placeholder="Danny" value="Danny">
+	</datalist>
+	</td>
+	</tr>
+	<tr>
+	<td><input type="button" value="pokaż okienko alert()"
+	onclick="alert('okienko')"></td>
+	<td><input type="reset" value="zresetuj"></td>
+	</tr>
+	<tr>
+	<td colspan="2">
+	<input type="image" src="https://loremflickr.com/320/240" />
+	<alt width="350px" height="200px">
+  
+  
+  
+  
+  </table>
+  </form>
+  </body>
+  </html>
